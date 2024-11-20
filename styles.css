@@ -127,6 +127,31 @@ header nav ul li a:hover {
 .productos .producto button:hover {
     background-color: #45a049;
 }
+/* Sección Testimonios */
+.testimonios {
+    padding: 3rem 1rem;
+    background-color: #f3f2ef;
+    text-align: center;
+}
+
+.testimonios h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.testimonios .testimonial-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.testimonios .testimonial {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
 
 /* Footer */
 footer {
