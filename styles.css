@@ -153,6 +153,20 @@ header nav ul li a:hover {
     width: 300px;
 }
 
+/* Sección Suscripción */
+.subscribe {
+    padding: 2rem 1rem;
+    background-color: #8d6e63;
+    color: white;
+    text-align: center;
+}
+
+.subscribe form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
 /* Footer */
 footer {
     background-color: #444;
