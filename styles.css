@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+*{
+ scroll-behavior: smooth;
+ scroll-padding: 150px;
+}
+
 /* General */
 body {
     font-family: 'Poppins', sans-serif;
@@ -7,6 +12,7 @@ body {
     padding: 0;
     background-color: #f3f2ef;
     color: #333;
+    
 }
 
 /* Encabezado */
@@ -15,6 +21,10 @@ header {
     color: white;
     padding: 1.5rem;
     text-align: center;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
 }
 
 header .logo h1 {
@@ -43,6 +53,7 @@ header nav ul li a {
     background: url('imagenes/gallery5.jpg') center/cover no-repeat;
     color: white;
     padding: 4rem 1rem;
+    margin-top: 153px;
 }
 
 .hero h2 {
@@ -71,9 +82,11 @@ header nav ul li a {
 }
 
 .productos .product-list {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 348px), 1fr));
+    justify-items: center;
     gap: 2rem;
+    align-content: center;
 }
 
 .productos .producto {
@@ -117,6 +130,7 @@ header nav ul li a {
     display: flex;
     justify-content: center;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .testimonios .testimonial {
@@ -125,21 +139,6 @@ header nav ul li a {
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     width: 300px;
-}
-
-/* Sección Suscripción */
-.subscribe {
-    padding: 2rem 1rem;
-    background-color: #8d6e63;
-    color: white;
-    text-align: center;
-}
-
-.subscribe form {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
 }
 
 /* Pie de página */
